@@ -1,0 +1,179 @@
+<!doctype html>
+
+<html lang="de">
+	<head>
+		<link rel="stylesheet" href="../css/style.css">
+		<title>Sign-Up</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<meta charset="UTF-8">
+		<meta name="author" content="Alexa">
+		<meta name="description" content="Eifach Oepis">
+		<style>
+			#wrapper {
+				width: 80%;
+				margin: 0 auto;
+			}
+			
+			#top {
+				width: 80%;
+			}
+			
+			section#one {
+				margin-top: 80px;
+			}
+			
+			section#two {
+				height: auto;
+				padding-bottom: 20px;
+			}
+			
+			caption {
+				font-size: 1.25rem;
+				font-weight: bold;
+				text-align: center;
+				margin-bottom: 10px;
+				
+			}
+			
+			table {
+				margin: 20px auto;
+				width: 60%;
+				text-align: center;
+			}
+			/* form styling */
+			
+			form {
+				margin: 0 auto;
+				width: 40%;
+				
+			}
+			
+			fieldset {
+				border: 1px solid rgba(50, 94, 52, 0.4);
+				border-radius: 5px;
+				text-align: left;
+				padding: 15px;
+				
+			}
+			
+			legend {
+				color: #325e3f;
+				font-weight: bold;
+			}
+			
+			label {
+				display: inline-block;
+				float: left;
+				width: 10em;
+			}
+			
+			input {
+				margin-right: 5px;
+			}
+			
+			.mrg {
+				margin-bottom: 10px;
+			}
+		
+		</style>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<div id="top">
+				<div id="head"><a class="link" href="#oben">Eifach Random</a></div>
+				
+				<nav>
+					<ul>
+						<li><a href="../index.html#home" class="smoothScroll">Home</a></li>
+						<li><a href="../index.html#gal" class="smoothScroll">Galerie</a></li>
+						<li><a href="../index.html#signup" class="smoothScroll">Sign-Up</a></li>
+					</ul>
+				</nav>
+			
+			</div><!-- end top-->
+			
+						
+			<div id="content">
+				<section id="one">
+					<a class="anchor" id="home"></a>
+					<h1>Öpis mit Text</h1>
+					<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </p>
+					<table>
+						<caption>Wichtigi Informatione</caption>
+						<tr>
+							<td>Datum:</td>
+							<td>15.Juli 2019</td>
+						</tr>
+						<tr>
+							<td>Wo:</td>
+							<td>Döte</td>
+						</tr>
+						<tr>
+							<td>Wer:</td>
+							<td>Alli</td>
+						</tr>
+						<tr>
+							<td>Zeit:</td>
+							<td>Du weisch wänn</td>
+						</tr>
+					</table>
+				</section><!-- end section 1-->
+				
+				<section id="two">
+					<a class="anchor" id="box"></a>
+					<h1>Anmeldeformular</h1>
+					<form name="booking" action="#" method="post">
+						
+							<p>
+								<label for="vorname">Vorname (Pflichtfeld):</label>
+								<input name="vorname" id="vorname" />
+							</p>
+							<p>
+								<label for="nachname">Nachname (Pflichtfeld):</label>
+								<input name="nachname" id="nachname" />
+							</p>
+							<p>
+								<label for="strasse">Strasse & Nr.:</label>
+								<input name="strasse" id="strasse" />
+							</p>
+							<p>
+								<label for="plz">PLZ:</label>
+								<input name="plz" id="plz"  />
+							</p>
+							<p>
+								<label for="ort">Ort:</label>
+								<input name="ort" id="ort" />
+							</p>
+							<p>
+								<label for="email">E-Mail (Pflichtfeld):</label>
+								<input name="email" id="email" size="24" />
+							</p>
+							<p>
+								<label>Anzahl Personen:</label>
+								<input name="anz" id="anz" size="10" />
+							</p>
+
+							<p class="mrg">Ihre Daten werden vertraulich behandelt. ;)</p>
+							<p class="mrg"><input name="agb" type="checkbox" > Ich habe die AGB gelesen...</p>
+							
+								<input name="send" type="submit" value="Senden" />
+								<input name="reset" type="reset" value="Löschen" />					
+					</form>					
+					
+				</section><!-- end section 2-->				
+					
+			</div><!-- end content-->
+			
+			<footer>
+				<p>Danke für Ihren Besuch! Wir freuen uns auf Sie! &copy; öpis</p>
+			</footer>
+		
+		</div><!--end wrapper-->
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/smoothscroll.js"></script> 
+
+	</body>
+
+</html>
