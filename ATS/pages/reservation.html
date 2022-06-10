@@ -1,0 +1,182 @@
+<!doctype html>
+
+<html lang="de">
+	<head>
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+		<title>Sign-Up</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<meta charset="UTF-8">
+		<meta name="author" content="Alexa">
+		<meta name="description" content="Reservation">
+		<style>
+			h1 {
+				margin-top: 15px;
+			}
+			#wrapper {
+				width: 80%;
+				margin: 0 auto;
+			}
+			#top {
+				width: 80%;
+			}	
+			section#one {
+				margin-top: 80px;
+			}		
+			section#two {
+				height: auto;
+				padding-bottom: 20px;
+			}
+			section#three {
+				height: 300px;
+				padding: 25px;
+			}			
+			caption {
+				font-size: 1.25rem;
+				font-weight: bold;
+				text-align: center;
+				margin-bottom: 10px;			
+			}			
+			table {
+				margin: 20px auto;
+				width: 60%;
+				text-align: center;
+			}
+
+			/* form styling */			
+			form {
+				margin: 0 auto;
+				width: 40%;		
+			}		
+			fieldset {
+				border: 1px solid rgba(50, 94, 52, 0.4);
+				border-radius: 5px;
+				text-align: left;
+				padding: 15px;			
+			}			
+			legend {
+				color: #325e3f;
+				font-weight: bold;
+			}			
+			label {
+				display: inline-block;
+				/*float: left;*/
+				width: 10em;
+			}
+			label.pep {
+				text-align: center;			
+			}	
+			input {
+				margin-right: 5px;
+				margin-top: 5px;
+				padding: 0.2em;
+			}
+			input.special {
+				width: 10%;
+			}
+			.mrg {
+				margin-bottom: 10px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<div id="top">
+				<div id="head"><a class="link" href="#oben">ATS</a></div>
+				
+				<nav>
+					<ul>
+						<li><a href="../index.html#home" class="smoothScroll">Home</a></li>
+						<li><a href="/pages/blog.html" class="smoothScroll">Blog</a></li>
+						<li><a href="/pages/reservation.html" class="smoothScroll">Reservation</a></li>
+						<li><a href="/pages/newsletter.html" class="smoothScroll">Newsletter</a></li>
+						<li><a href="/pages/signup.html" class="smoothScroll">Sign-Up</a></li>
+					</ul>
+				</nav>
+			
+			</div><!-- end top-->
+			
+		<!-- Start Content -->				
+			<div id="content">
+				<section id="one">
+					<a class="anchor" id="home"></a>
+					<h1>Make a Reservation</h1>
+					<p>Make a reservation at the Tea Shop  </p>
+					<table>
+						<caption>Important Information</caption>
+						<tr>
+							<td>Time to enjoy</td>
+							<td>2 hours</td>
+						</tr>
+						<tr>
+							<td>Where:</td>
+							<td>Bahnhofstrasse Zürich</td>
+						</tr>
+					</table>
+				</section><!-- end section 1-->
+				
+				<section id="two">
+					<a class="anchor" id="box"></a>
+					<h1 style="padding-top: 10px;">Reservation Information</h1>
+					<form name="booking" action="#" method="post">
+						<p>
+							<label for="vorname">First Name (required):</label>
+							<input name="vorname" id="vorname" />
+						</p>
+						<p>
+							<label for="nachname">Last Name (required):</label>
+							<input name="nachname" id="nachname" />
+						</p>
+						<p>
+							<label for="email">E-Mail (required):</label>
+							<input name="email" id="email"  />
+						</p>
+
+							</p>
+							<p>
+								<label class="pep">Number of People joining (up to 6 people):</label>
+								<input class="special" type="number" id="quantity" name="quantity" min="1" max="6" />
+							</p>
+
+							<input name="send" type="submit" value="Send" />
+							<input name="reset" type="reset" value="Delete" />					
+					</form>					
+				</section><!-- end section 2-->
+
+				<section id="three">
+					<!-- Clanedar for DATE and TIME picking: -->
+					<script type="text/javascript">
+						$('#demo').daterangepicker({
+							"singleDatePicker": true,
+							"timePicker": true,
+							"timePickerIncrement": 15,
+							"startDate": "06/04/2022",
+							"endDate": "06/10/2022"
+						}, function(start, end, label) {
+						console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+						});
+					</script>
+				</section>		
+
+			</div><!-- end content-->
+			
+			<footer>
+				<p>Thank you. We are looking forward to your visit! &copy; ATS</p>
+			</footer>
+		
+		</div><!--end wrapper-->
+	
+	<script src="../js/jquery-3.1.1.js"></script>
+	<script src="../js/jquery.js"></script>	
+	<script src="../js/jquery.validate.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="../js/smoothscroll.js"></script> 
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+	</body>
+
+</html>

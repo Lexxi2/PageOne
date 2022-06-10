@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="de">
+	<head>
+		<link rel="stylesheet" href="../css/style.css">
+		<title>Newsletter</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<meta charset="UTF-8">
+		<meta name="author" content="Alexa">
+		<meta name="description" content="Sign-Up">
+		<style>
+			h1 {
+				padding-top: 2em;
+				padding-bottom: 0.5em;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				font-size: 2rem;
+				color: #325e3f;
+				margin-bottom: 7px;
+			}
+			h2 {
+				padding-top: 0.5em;
+				padding-bottom: 0.5em;
+			}
+			#wrapper {
+				width: 80%;
+				margin: 0 auto;
+			}
+			#top {
+				width: 80%;
+			}
+			section#one {
+				margin-top: 80px;
+			}
+			section#two {
+				height: auto;
+				padding-bottom: 20px;
+			}
+			caption {
+				font-size: 1.25rem;
+				font-weight: bold;
+				text-align: center;
+				margin-bottom: 10px;	
+			}
+			
+			/* form styling */		
+			form {
+				margin: 0 auto;
+				width: 40%;				
+			}			
+			fieldset {
+				border: 1px solid rgba(50, 94, 52, 0.4);
+				border-radius: 5px;
+				text-align: left;
+				padding: 15px;				
+			}		
+			legend {
+				color: #325e3f;
+				font-weight: bold;
+			}			
+			label {
+				display: inline-block;
+				/* float: left; */
+				width: 10em;
+			}			
+			input {
+				margin-right: 5px;
+				margin-top: 5px;
+				padding: 0.2em;
+			}		
+			.mrg {
+				margin-bottom: 10px;
+			}
+		
+		</style>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<div id="top">
+				<div id="head"><a class="link" href="#oben">ATS</a></div>
+				
+				<nav>
+					<ul>
+						<li><a href="../index.html#home" class="smoothScroll">Home</a></li>
+						<li><a href="/pages/blog.html" class="smoothScroll">Blog</a></li>
+						<li><a href="/pages/reservation.html" class="smoothScroll">Reservation</a></li>
+						<li><a href="/pages/newsletter.html" class="smoothScroll">Newsletter</a></li>
+						<li><a href="/pages/signup.html" class="smoothScroll">Sign-Up</a></li>
+					</ul>
+				</nav>
+			
+			</div><!-- end top-->
+			
+						
+			<div id="content">
+				<section id="one">
+					<a class="anchor" id="home"></a>
+					<h1>Sign-Up for the Newsletter</h1>
+					<p>If you want to stay informed on upcoming events, the blog and other things, sign up here: </p>
+				</section><!-- end section 1-->
+				
+				<section id="two">
+					<a class="anchor" id="box"></a>
+					<h2>Sign-Up</h2>
+					<form name="booking" action="#" method="post">
+							<p>
+								<label for="vorname">First Name (required):</label>
+								<input name="vorname" id="vorname" />
+							</p>
+							<p>
+								<label for="nachname">Last Name (required):</label>
+								<input name="nachname" id="nachname" />
+							</p>
+							<p>
+								<label for="email">E-Mail (required):</label>
+								<input name="email" id="email"  />
+							</p>
+
+							<p class="mrg">Your data is confidential and will not be given to third parties</p>
+							<p class="mrg"><input name="agb" type="checkbox" > I have read the terms and conditions...</p>
+							
+								<input name="send" type="submit" value="Send" />
+								<input name="reset" type="reset" value="Delete" />					
+					</form>					
+					
+				</section><!-- end section 2-->				
+					
+			</div><!-- end content-->
+			
+			<footer>
+				<p>Thank you for signing up for our Newsletter &copy; ATS</p>
+			</footer>
+		
+		</div><!--end wrapper-->
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/smoothscroll.js"></script> 
+	<script src="../js/jquery-3.1.1.js"></script>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery.validate.min.js"></script>
+
+	</body>
+
+</html>
