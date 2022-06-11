@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="de">
+<html>
 	<head>
 		<link rel="stylesheet" href="../css/style.css">
 		<title>Alexa's Tea Shop </title>
@@ -9,92 +9,92 @@
 		<meta name="author" content="Alexa">
 		<meta name="description" content="Alexas Tea Shop">
 		<style>
-            h3 {
-                margin-bottom: 10px;
-                color: #325e3f;
-            }
+        h3 {
+            margin-bottom: 10px;
+            color: #325e3f;
+        }
 			 .imgrap{
-                object-fit: cover;
-				border-radius: 8px;
-				display: block;
-				margin-top: 10px;
-				width: 97%;
-                height: 200px;
-			}
-            #columns {
-                padding-top: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+            margin-top: 10px;
+            width: 97%;
+            height: 200px;
+        }
+        #columns {
+            padding-top: 100px;
+        }
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+        float: left;
+        width: 75%;
+        }
+        /* Right column */
+        .rightcolumn {
+        float: left;
+        position: relative;
+        width: 25%;
+        padding-left: 20px;
+        }
+        /* Add a card effect for articles */
+        .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        }
+        .row {
+            margin-top: 100px;
+        }
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+            width: 100%;
+            padding: 0;
             }
-            /* Create two unequal columns that floats next to each other */
-            /* Left column */
-            .leftcolumn {
-            float: left;
-            width: 75%;
-            }
-            /* Right column */
-            .rightcolumn {
-            float: left;
-            position: relative;
-            width: 25%;
-            padding-left: 20px;
-            }
-            /* Add a card effect for articles */
-            .card {
-            background-color: white;
-            padding: 20px;
-            margin-top: 20px;
-            }
-            .row {
-                margin-top: 100px;
-            }
-            /* Clear floats after the columns */
-            .row:after {
-            content: "";
-            display: table;
-            clear: both;
-            }
-            /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-            @media screen and (max-width: 800px) {
-                .leftcolumn, .rightcolumn {
-                width: 100%;
-                padding: 0;
-                }
-            }
-            .pop{
-                padding: 10px;
-                background-color: #325e3f;
-            }
-            .pop a:hover, a:active {
-                font-size: 110%;
-            }
-            #pic {
-                object-fit: contain;
-                width: 100%;
-                height: 200px;
-                border-radius: 2%; 
-            }
-            .links {
-                float: left; 
-                width: 70%; 
-                object-fit: contain;
-            }
-            .rechts {
-                display: table-cell; 
-                
-            }
+        }
+        .pop{
+            padding: 10px;
+            background-color: #325e3f;
+        }
+        .pop a:hover, a:active {
+            font-size: 110%;
+        }
+        #pic {
+            object-fit: contain;
+            width: 100%;
+            height: 200px;
+            border-radius: 2%; 
+        }
+        .links {
+            float: left; 
+            width: 70%; 
+            object-fit: contain;
+        }
+        .rechts {
+            display: table-cell; 
+            
+        }
 		</style>
 	</head>
 	
 	<body>
 		<div id="wrapper">
 			<div id="top">
-				<div id="head"><a class="link" href="#oben">ATS</a></div>
+				<div id="head">ATS</div>
 				
 				<nav>
 					<ul>
 						<li><a href="../index.html#home" class="smoothScroll">Home</a></li>
 						<li><a href="/pages/blog.html" class="smoothScroll">Blog</a></li>
 						<li><a href="/pages/reservation.html" class="smoothScroll">Reservation</a></li>
-                        <li><a href="/pages/newsletter.html" class="smoothScroll">Newsletter</a></li>
+            <li><a href="/pages/newsletter.html" class="smoothScroll">Newsletter</a></li>
 						<li><a href="/pages/signup.html" class="smoothScroll">Sign-Up</a></li>
 					</ul>
 				</nav>
