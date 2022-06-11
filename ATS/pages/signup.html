@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="../css/style.css">
+		<link rel="icon" href="../assets/logo.png" type="image/icon type">
 		<title>Sign-Up</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<meta charset="UTF-8">
@@ -44,13 +45,6 @@
 			section#one {
 				text-align: left;
 			}  
-			#wrapper {
-				width: 80%;
-				margin: 0 auto;
-			}
-			#top {
-				width: 80%;
-			}
 			section#one {
 				margin-top: 80px;
 			}
@@ -77,18 +71,13 @@
 				outline: none;
 				border-color: #325e3f;
 			}
-			
-			
-
-		
 		</style>
 	</head>
 	
 	<body>
 		<div id="wrapper">
 			<div id="top">
-				<div id="head">ATS</div>
-				
+				<div id="head"><img src="/assets/logo.png" id="logo"><a class="link" href="../index.html"><span class="colChange">.....</span>ATS</a></div>
 				<nav>
 					<ul>
 						<li><a href="../index.html#home" class="smoothScroll">Home</a></li>
@@ -109,7 +98,7 @@
 						<p>Please enter your information. <br> You will get birthday giftcards and more. </p>
 						<p>Required fields (*) </p>
 
-						<form id="userform" name="userform" action="/pages/thx.html" method="post">
+						<form id="signup" name="signup" action="/pages/thx.html" method="post">
 							<fieldset id="user">
 								<!--Infos for users -->
 								<legend>Data:</legend>
@@ -123,11 +112,11 @@
 								</div>
 								<div class="form-group">
 									<label for="bdate">Birthday (*):</label>
-									<input class="form-control" name="bdate" type="text" id="bdate">
+									<input class="form-control" type="date" name="bdate" id="bdate">
 								</div>
 								<div class="form-group">
 									<label for="email">e-mail (*):</label>
-									<input class="form-control" name="email" type="text" size="20" id="email">
+									<input class="form-control" type="email" name="email" id="email" size="20" >
 								</div>
 								<div class="form-group">
 									<label for="username">Username (*): </label>

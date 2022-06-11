@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 
 //validieren
-	$("#userform").validate({
+	$("#signup").validate({
 //Regeln
 	rules: {
 	vname: {
