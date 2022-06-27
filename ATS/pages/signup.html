@@ -1,159 +1,119 @@
 <!doctype html>
 
 <html>
-	<head>
-		<link rel="stylesheet" href="../css/style.css">
-		<link rel="icon" href="../assets/logo.png" type="image/icon type">
-		<title>Sign-Up</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<meta charset="UTF-8">
-		<meta name="author" content="Alexa">
-		<meta name="description" content="Sign-Up">
-		<style>
-			/* error messages and validation styling */
-			label.error{
-				color:#f23c3c
-			}
-			label.valid{
-				color:#91d64d;}
-			input.error{
-				border-color:#f23c3c;color:#f23c3c; 
-			}
-			input.valid{
-				border-color:#91d64d;
-			}
 
-			/* Styling */
-			h1 {
-				padding-top: 10px;
-				padding-bottom: 0.5em;
-				letter-spacing: 2px;
-				text-transform: uppercase;
-				font-size: 2rem;
-				text-align: center;
-				color: #325e3f;
-				margin-bottom: 7px;
-			}
-			p {
-				text-align: center;
-			}
-			#content {
-				background-color: #EBEBEB;
-				margin-top: 120px;
-				padding-bottom: 10px;
-			}
-			section#one {
-				text-align: left;
-			}  
-			section#one {
-				margin-top: 80px;
-			}
+<head>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="icon" href="../assets/logo.png" type="image/icon type">
+	<title>Sign-Up</title>
+	<script type="text/javascript" src="/js/database.js" charset="utf-8"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="author" content="Alexa">
+	<meta name="description" content="Sign-Up">
+	<style>
 
-			caption {
-				font-size: 1.25rem;
-				font-weight: bold;
-				text-align: center;
-				margin-bottom: 10px;	
-			}
-			
-			/* form styling */		
-			form {
-				margin: 0 auto;
-				width: 55%;				
-			}			
-			fieldset {
-				border: 1px solid rgba(50, 94, 52, 0.4);
-				border-radius: 5px;
-				text-align: left;
-				padding: 15px;				
-			}
-			input:focus {
-				outline: none;
-				border-color: #325e3f;
-			}
-		</style>
-	</head>
-	
-	<body>
-		<div id="wrapper">
-			<div id="top">
-				<div id="head"><img src="/assets/logo.png" id="logo"><a class="link" href="../index.html"><span class="colChange">.....</span>ATS</a></div>
-				<nav>
-					<ul>
-						<li><a href="../index.html#home" class="smoothScroll">Home</a></li>
-						<li><a href="/pages/blog.html" class="smoothScroll">Blog</a></li>
-						<li><a href="/pages/reservation.html" class="smoothScroll">Reservation</a></li>
-						<li><a href="/pages/newsletter.html" class="smoothScroll">Newsletter</a></li>
-						<li><a href="/pages/signup.html" class="smoothScroll">Sign-Up</a></li>
-					</ul>
-				</nav>
-			
-			</div><!-- end top-->
-			
-						
-			<div id="content">
-				<section id="one">
-					<a class="anchor" id="home"></a>
-						<h1>Create your account</h1>
-						<p>Please enter your information. <br> You will get birthday giftcards and more. </p>
-						<p>Required fields (*) </p>
+	</style>
+</head>
 
-						<form id="signup" name="signup" action="/pages/thx.html" method="post">
-							<fieldset id="user">
-								<!--Infos for users -->
-								<legend>Data:</legend>
-								<div class="form-group">
-									<label for="vname">First Name(*):</label>
-									<input class="form-control" type="text" name="vname" id="vname">
-								</div>
-								<div class="form-group">
-									<label for="nname">Last Name (*):</label>
-									<input class="form-control" type="text" name="nname" id="nname" >
-								</div>
-								<div class="form-group">
-									<label for="bdate">Birthday (*):</label>
-									<input class="form-control" type="date" name="bdate" id="bdate">
-								</div>
-								<div class="form-group">
-									<label for="email">e-mail (*):</label>
-									<input class="form-control" type="email" name="email" id="email" size="20" >
-								</div>
-								<div class="form-group">
-									<label for="username">Username (*): </label>
-									<input class="form-control" type="text" name="username" id="username" placeholder="Username">
-								</div>
-								<div class="form-group">
-									<label for="password">Password (*): </label>
-									<input class="form-control" type="password" name="password" id="password" placeholder="Password">
-								</div>
-								<div class="form-group">
-									<label class="password-meter-label" for="password">Password strength</label>
-										<div class="password-meter">
-											<div class="password-meter-message">
-											&nbsp;
-											</div>
-										</div>
-								</div>
-								<div class="form-group">
-									<label for="confirm_password">Confirm password (*): </label>
-									<input class="form-control" type="password" name="confirm_password" id="confirm_password" placeholder="confirm password">
-								</div>
-							</fieldset>
-							  <div class="form-group" style="text-align: right;">
-								<button type="submit" class="btn btn-primary" style="margin: 5px; padding: 2px;">Send</button>
-							 </div>
-						</form>
-						</section>
+<body>
+	<div id="wrapper">
+		<div id="top">
+			<div id="head"><img src="/assets/logo.png" id="logo"><a class="link" href="../index.html"><span
+						class="colChange">.....</span>ATS</a></div>
+			<nav>
+				<ul>
+					<li><a href="../index.html#home" class="smoothScroll">Home</a></li>
+					<li><a href="/pages/blog.html" class="smoothScroll">Blog</a></li>
+					<li><a href="/pages/reservation.html" class="smoothScroll">Reservation</a></li>
+					<li><a href="/pages/newsletter.html" class="smoothScroll">Newsletter</a></li>
+					<li><a href="/pages/signup.html" class="smoothScroll">Sign-Up</a></li>
+				</ul>
+			</nav>
+
+		</div><!-- end top-->
+
+
+		<div id="content">
+			<section id="one">
+				<a class="anchor" id="home"></a>
+				<h1>Create your account</h1>
+				<p>Please enter your information. <br> You will get birthday giftcards and more. </p>
+				<p>Required fields (*) </p>
+
+				<form id="signup" name="signup" action="/pages/thx.html" method="post">
+					<fieldset id="user">
+						<!--Infos for users -->
+						<legend>Data:</legend>
+						<div class="form-group">
+							<label for="vname"> Name(*):</label>
+							<input class="form-control" type="text" name="vname" id="userName">
 						</div>
-					</div>
-				
-					<footer>
-						<p>Thank you for signing up &copy; ATS</p>
-					</footer>
-				
-					<script src="../js/jquery-3.1.1.js"></script>
-				<script src="../js/jquery.validate.min.js"></script>
-				<script src="../js/jquery.validate.password.js"></script>
-				<script src="../js/validate.js"></script>
-			</body>
-		</html>
+						<!-- 
+						<div class="form-group">
+							<label for="nname">Last Name (*):</label>
+							<input class="form-control" type="text" name="nname" id="nname">
+						</div>  
+						<div class="form-group">
+							<label for="bdate">Birthday (*):</label>
+							<input class="form-control" type="date" name="bdate" id="bdate">
+						</div> -->
+						<div class="form-group">
+							<label for="email">e-mail (*):</label>
+							<input class="form-control" type="text" name="email" id="userEmail" size="20">
+						</div>
+						<div class="form-group">
+							<label for="username">Username (*): </label>
+							<input class="form-control" type="text" name="username" id="userUser"
+								placeholder="Username">
+						</div>
+						<div class="form-group">
+							<label for="password">Password (*): </label>
+							<input class="form-control" type="password" name="password" id="userNote"
+								placeholder="Password">
+						</div>
+						<div class="form-group">
+							<label class="password-meter-label" for="password">Password strength</label>
+							<div class="password-meter">
+								<div class="password-meter-message">
+									&nbsp;
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="confirm_password">Confirm password (*): </label>
+							<input class="form-control" type="password" name="confirm_password" id="confirm_password"
+								placeholder="confirm password">
+						</div>
+
+						<!-- Input button for local storage -->
+						<div class="form-group" style="text-align: right;">
+							<label class="label-class"></label>
+							<input type="button" id="saveUserInfoBtn" value="Save User Info"
+								onclick="saveUserInfo('userName', 'userEmail', 'userUser', 'userNote')" />
+						</div>
+					</fieldset>
+				</form>
+			</section>
+			<hr>
+			<!-- For output -->
+			<div class="form-group" style="text-align: center;">
+				<input type="text" id="searchByNameKeyword" placeholder="Input the user name to search." size="30" />
+				<input type="button" id="searchByNameBtn" value="Search" onclick="search('searchByNameKeyword')" />
+				<input type="button" id="clearLocalStorageBtn" value="Clear Local Storage" onclick="clearLocalStorage()" />
+			</div>
+			<output id="outputUsersList" style="display:block;margin-top: 10px;"></output>
+		</div>
+	</div>
+
+	<footer>
+		<p>Thank you for signing up &copy; ATS</p>
+	</footer>
+
+	<script src="../js/jquery-3.1.1.js"></script>
+	<script src="../js/jquery.validate.min.js"></script>
+	<script src="../js/jquery.validate.password.js"></script>
+	<script src="../js/validate.js"></script>
+</body>
+
+</html>

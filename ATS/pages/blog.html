@@ -1,167 +1,197 @@
 <!doctype html>
 
 <html>
-	<head>
-		<link rel="stylesheet" href="../css/style.css">
-		<link rel="icon" href="../assets/logo.png" type="image/icon type">
-		<title>Blog</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<meta charset="UTF-8">
-		<meta name="author" content="Alexa">
-		<meta name="description" content="Sign-Up">
-		<style>
-        h3 {
-            margin-bottom: 10px;
-            color: #325e3f;
-        }
-			 .imgrap{
-            object-fit: cover;
-            border-radius: 8px;
-            display: block;
-            margin-top: 10px;
-            width: 97%;
-            height: 200px;
-        }
-        #columns {
-            padding-top: 100px;
-        }
-        /* Create two unequal columns that floats next to each other */
-        /* Left column */
-        .leftcolumn {
-        float: left;
-        width: 75%;
-        }
-        /* Right column */
-        .rightcolumn {
-        float: left;
-        position: relative;
-        width: 25%;
-        padding-left: 20px;
-        }
-        /* Add a card effect for articles */
-        .card {
-        background-color: white;
-        padding: 20px;
-        margin-top: 20px;
-        }
-        .row {
-            margin-top: 100px;
-        }
-        /* Clear floats after the columns */
-        .row:after {
-        content: "";
-        display: table;
-        clear: both;
-        }
-        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 800px) {
-            .leftcolumn, .rightcolumn {
-            width: 100%;
-            padding: 0;
-            }
-        }
-        .pop{
-            padding: 10px;
-            background-color: #325e3f;
-        }
-        .pop a:hover, a:active {
-            font-size: 110%;
-        }
-        #pic {
-            object-fit: contain;
-            width: 100%;
-            height: 200px;
-            border-radius: 2%; 
-        }
-        .links {
-            float: left; 
-            width: 70%; 
-            object-fit: contain;
-        }
-        .rechts {
-            display: table-cell; 
-            
-        }
-		</style>
-	</head>
-	
-	<body>
-		<div id="wrapper">
-			<div id="top">
-				<div id="head"><img src="/assets/logo.png" id="logo"><a class="link" href="../index.html"><span class="colChange">.....</span>ATS</a></div>
-				
-				<nav>
-					<ul>
-						<li><a href="../index.html#home" class="smoothScroll">Home</a></li>
-						<li><a href="/pages/blog.html" class="smoothScroll">Blog</a></li>
-						<li><a href="/pages/reservation.html" class="smoothScroll">Reservation</a></li>
-            <li><a href="/pages/newsletter.html" class="smoothScroll">Newsletter</a></li>
-						<li><a href="/pages/signup.html" class="smoothScroll">Sign-Up</a></li>
-					</ul>
-				</nav>
-			
-			</div><!-- end top-->
-              
-              <div class="row" >
 
-                <div class="leftcolumn">
-                  <div class="card" id="one">
-                    <h2>Tea garden Ascona</h2>
-                    <h5>Tea Garden, 15.May 2022</h5>
-                    <img class="imgrap" src="/img/garden.jpg" alt="Tea Garden Ascona">
-                    <p>Sunny sunday at the Tea Garden on Monte Verita located above Ascona.<br> I just recently enjoyed a relaxing cup of tea at <i>La Casa del Te</i>. This tiny tea cafe is not well known but most certainly well visited. It seams like many know of this place but choose to keep it secret. </p>
-                  </div>
+<head>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../assets/logo.png" type="image/icon type">
+  <title>Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="author" content="Alexa">
+  <meta name="description" content="Sign-Up">
+  <style>
+    h3 {
+      margin-bottom: 10px;
+      color: #325e3f;
+    }
 
-                  <div class="card" id="three">
-                      <div class="links" >
-                        <h2>All about Blue Tea</h2>
-                        <h5>Blue Tea, 1.May 2022</h5>
-                        <p id="tex">Ever heard of blue Tea? It's not just a creative new name for tea, it actually is BLUE!<br> Blue tea can be two different things: 
-                            <ul style="list-style-type: none;">
-                                <li>The oxidation process</li>
-                                <li>The secret ingredient</li> 
-                            </ul> 
-                            This special blend from <i>Mariage Freres</i> is made with the secret ingredient. I think it might be <i>butterfly-pea-powder</i>, at least as far as my knowledge goes.
-                        </p>
-                      </div>
-                      <div class="rechts">
-                        <img id="pic" src="/img/blue2.jpg" alt="Blue Tea">
-                    </div>
-                  </div>
+    .imgrap {
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+      margin-top: 10px;
+      width: 97%;
+      height: 200px;
+    }
 
-                  <div class="card" id="two">
-                    <div class="links">
-                      <h2>High Tea at Baur au Lac</h2>
-                      <h5>High Tea, 20.February 2022</h5>
-                      <p>The seasonal expirience, only for a few cold winter months. <br> Baur au Lac will serve you a neat variety of teas, in fact as many as you may want to drink during your stay there. The <i>High Tea</i> or <i>Afternoon Tea</i> as they call it, includes the traditional Etagere with 3 tiers. On the very bottom one you will be delighted to find some savory sandwiches, on the second tier are the classic scones and finishing of on the top tier some sweet patisserie. </p>    
-                    </div>
-                    <div class="rechts" style="padding-left: 125px;"> 
-                        <img id="pic" src="/img/bal.jpg" alt="Baur au Lac, le Hall"> 
-                      </div>
-                    </div>
-                </div>
+    #columns {
+      padding-top: 100px;
+    }
 
-                <div class="rightcolumn">
-                  <div class="card">
-                    <h3>Popular Post</h3>
-                    <div class="pop"> <a href="#three" class="smoothScroll" style="color: white; text-decoration: none;">All about Blue Tea</a> </div><br>
-                    <div class="pop"> <a href="#one" class="smoothScroll" style="color: white; text-decoration: none;">Tea Garden Ascona</a> </div><br>
-                    <div class="pop"><a href="#two" class="smoothScroll" style="color: white; text-decoration: none;">High Tea at Baur au Lac</a> </div>
-                  </div>
-                </div>
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {
+      float: left;
+      width: 75%;
+    }
 
-              </div> <!-- End of rows -->
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      position: relative;
+      width: 25%;
+      padding-left: 20px;
+    }
 
-			<footer>
-				<p>Thank you for visiting our site &copy; ATS</p>
-			</footer>
-		
-		</div><!--end wrapper-->
-		
-		
-	<script src="js/jquery.js"></script>
-	<script src="js/smoothscroll.js"></script> 
+    /* Add a card effect for articles */
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
 
-	</body>
+    .row {
+      margin-top: 100px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    .pop {
+      padding: 10px;
+      background-color: #325e3f;
+    }
+
+    .pop a:hover,
+    a:active {
+      font-size: 110%;
+    }
+
+    #pic {
+      object-fit: contain;
+      width: 100%;
+      height: 200px;
+      border-radius: 2%;
+    }
+
+    .links {
+      float: left;
+      width: 70%;
+      object-fit: contain;
+    }
+
+    .rechts {
+      display: table-cell;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="top">
+      <div id="head"><img src="/assets/logo.png" id="logo"><a class="link" href="../index.html"><span
+            class="colChange">.....</span>ATS</a></div>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html#home" class="smoothScroll">Home</a></li>
+          <li><a href="/pages/blog.html" class="smoothScroll">Blog</a></li>
+          <li><a href="/pages/reservation.html" class="smoothScroll">Reservation</a></li>
+          <li><a href="/pages/newsletter.html" class="smoothScroll">Newsletter</a></li>
+          <li><a href="/pages/signup.html" class="smoothScroll">Sign-Up</a></li>
+        </ul>
+      </nav>
+
+    </div><!-- end top-->
+
+    <div class="row">
+
+      <div class="leftcolumn">
+        <div class="card" id="one">
+          <h2>Tea garden Ascona</h2>
+          <h5>Tea Garden, 15.May 2022</h5>
+          <img class="imgrap" src="/img/garden.jpg" alt="Tea Garden Ascona">
+          <p>Sunny sunday at the Tea Garden on Monte Verita located above Ascona.<br> I just recently enjoyed a relaxing
+            cup of tea at <i>La Casa del Te</i>. This tiny tea cafe is not well known but most certainly well visited.
+            It seams like many know of this place but choose to keep it secret. </p>
+        </div>
+
+        <div class="card" id="three">
+          <div class="links">
+            <h2>All about Blue Tea</h2>
+            <h5>Blue Tea, 1.May 2022</h5>
+            <p id="tex">Ever heard of blue Tea? It's not just a creative new name for tea, it actually is BLUE!<br> Blue
+              tea can be two different things:
+            <ul style="list-style-type: none;">
+              <li>The oxidation process</li>
+              <li>The secret ingredient</li>
+            </ul>
+            This special blend from <i>Mariage Freres</i> is made with the secret ingredient. I think it might be
+            <i>butterfly-pea-powder</i>, at least as far as my knowledge goes.
+            </p>
+          </div>
+          <div class="rechts">
+            <img id="pic" src="/img/blue2.jpg" alt="Blue Tea">
+          </div>
+        </div>
+
+        <div class="card" id="two">
+          <div class="links">
+            <h2>High Tea at Baur au Lac</h2>
+            <h5>High Tea, 20.February 2022</h5>
+            <p>The seasonal expirience, only for a few cold winter months. <br> Baur au Lac will serve you a neat
+              variety of teas, in fact as many as you may want to drink during your stay there. The <i>High Tea</i> or
+              <i>Afternoon Tea</i> as they call it, includes the traditional Etagere with 3 tiers. On the very bottom
+              one you will be delighted to find some savory sandwiches, on the second tier are the classic scones and
+              finishing of on the top tier some sweet patisserie. </p>
+          </div>
+          <div class="rechts" style="padding-left: 125px;">
+            <img id="pic" src="/img/bal.jpg" alt="Baur au Lac, le Hall">
+          </div>
+        </div>
+      </div>
+
+      <div class="rightcolumn">
+        <div class="card">
+          <h3>Popular Post</h3>
+          <div class="pop"> <a href="#three" class="smoothScroll" style="color: white; text-decoration: none;">All about
+              Blue Tea</a> </div><br>
+          <div class="pop"> <a href="#one" class="smoothScroll" style="color: white; text-decoration: none;">Tea Garden
+              Ascona</a> </div><br>
+          <div class="pop"><a href="#two" class="smoothScroll" style="color: white; text-decoration: none;">High Tea at
+              Baur au Lac</a> </div>
+        </div>
+      </div>
+
+    </div> <!-- End of rows -->
+
+    <footer>
+      <p>Thank you for visiting our site &copy; ATS</p>
+    </footer>
+
+  </div>
+  <!--end wrapper-->
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/smoothscroll.js"></script>
+
+</body>
 
 </html>
