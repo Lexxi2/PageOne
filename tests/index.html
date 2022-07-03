@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <title>Tests</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="author" content="Alexa">
+
+
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+</head>
+
+<body>
+    <h3>Python test</h3>
+
+    <div>
+        <py-script>
+            from random import randint
+
+            zahl= randint(1,10)
+
+            guess= int( input("Rate die Zahl? ") )
+            versuche= 1
+
+
+            while guess != zahl:
+                guess = int( input("Die Zahl war leider falsch, rate nochmals: ") )
+
+                if guess > zahl: 
+                    print("Die Zahl ist kleiner als dein Tipp.")
+
+                elif guess < zahl:
+                    print("Die Zahl ist grösser als dein Tipp.")
+                versuche = versuche + 1
+
+            print("Richtig du hast die Zahl erraten! Die Zahl war: " + str(zahl))
+            print("Du hast " + str(versuche) + " Versuche gebraucht.")
+        </py-script>
+    </div>
+</body>
+
+</html>
